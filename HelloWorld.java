@@ -30,5 +30,10 @@ public class HelloWorld {
         double Answer = test.calculateHypotenuse(2, 2);
         System.out.println(Answer);
 
+        //Importing FizzBuzz challenge
+        FizzBuzz fizzTest = new FizzBuzz();
+        String answer = fizzTest.fizzBuzz(2);
+        System.out.println(answer);
+
     }
 }
