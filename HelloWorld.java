@@ -99,5 +99,7 @@ public class HelloWorld {
         System.out.println(questionSix);
         ArrayList<String> questionSeven = puzzleTest.question7();
         System.out.println(questionSeven);
+        hashmatique hashTesting = new hashmatique();
+        hashTesting.assignment1();
     }
 }
