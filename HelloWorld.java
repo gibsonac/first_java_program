@@ -1,4 +1,8 @@
 import java.util.Date;
+import java.util.ArrayList;
+import java.lang.reflect.Array;
+
+
 
 public class HelloWorld {
     public String getCurrentDate() {
@@ -30,18 +34,18 @@ public class HelloWorld {
         double Answer = test.calculateHypotenuse(2, 2);
         System.out.println(Answer);
 
-        //Importing FizzBuzz challenge
+        // Importing FizzBuzz challenge
         FizzBuzz fizzTest = new FizzBuzz();
         String answer = fizzTest.fizzBuzz(2);
         System.out.println(answer);
 
-        //String Manipulation Practice Assignment
-        //number 1
+        // String Manipulation Practice Assignment
+        // number 1
         StringManipulation stringTest = new StringManipulation();
-        String newAnswer = stringTest.trimAndConcact("    Hello     ","     World    ");
+        String newAnswer = stringTest.trimAndConcact("    Hello     ", "     World    ");
         System.out.println(newAnswer);
-        
-        //number 2
+
+        // number 2
         StringManipulation manipulator = new StringManipulation();
         char letter = 'o';
         Integer a = manipulator.getIndexOrNull("Coding", letter);
@@ -51,7 +55,7 @@ public class HelloWorld {
         System.out.println(c); // 4
         System.out.println(d); // null
 
-        //number 3
+        // number 3
         StringManipulation manipulator2 = new StringManipulation();
         String word = "Hello";
         String subString = "llo";
@@ -64,5 +68,36 @@ public class HelloWorld {
         StringManipulation manipulator3 = new StringManipulation();
         String theWord = manipulator3.concatSubstring("Hello", 1, 2, "world");
         System.out.println(theWord); // eworld
+
+        // Basic Java Algo Practice
+        BasicsAssignment myTest = new BasicsAssignment();
+        // myTest.Print255();
+        // myTest.PrintOdd();
+        // myTest.Sum();
+        int[] theArray = { 1, 3, 5, 7, 9, 13 };
+        int[] theArray2 = { 1, 3, 5, -7, 9, -13 };
+        // myTest.Iterating(theArray);
+        // myTest.findMax(theArray);
+        // myTest.getAverage(theArray);
+        // myTest.oddArray();
+        // myTest.greaterThan(theArray, 5);
+        // myTest.squareValues(theArray);
+        myTest.noNegatives(theArray2);
+
+        System.out.println(myTest.MaxMinAvg(theArray));
+        myTest.Shifting(theArray);
+        puzzling puzzleTest = new puzzling();
+        // ArrayList<Integer> questionOne = puzzleTest.question1();
+        // System.out.println(questionOne);
+        // ArrayList<String> questionTwo = puzzleTest.question2();
+        // System.out.println(questionTwo);
+        // puzzleTest.question3();
+        // int[] questionFour = puzzleTest.question4();
+        // System.out.println(questionFour);
+        ArrayList<Integer> questionFive = puzzleTest.question5();
+        String questionSix = puzzleTest.question6();
+        System.out.println(questionSix);
+        ArrayList<String> questionSeven = puzzleTest.question7();
+        System.out.println(questionSeven);
     }
 }
