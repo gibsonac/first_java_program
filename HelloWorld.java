@@ -101,5 +101,7 @@ public class HelloWorld {
         System.out.println(questionSeven);
         hashmatique hashTesting = new hashmatique();
         hashTesting.assignment1();
+        listExceptions exceptionTest = new listExceptions();
+        exceptionTest.Practice();
     }
 }
